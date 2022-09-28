@@ -104,7 +104,6 @@ replace spbja_bmonto = 0 if spbja_bmonto ==. & spbja_b == 0
 
 capture drop spprenat_q
 gen sppren_q = s02b_14b*300
-note: el subsidio universal prenatal se entrega por 4 meses en productos equivalentes a 300 bs.
 
 *BONO JUANCITO PINTO
 
@@ -184,7 +183,6 @@ do "$do\salario_minimo.do"
 *5. Subsidio de lactancia mensualizado
 capture drop ysal1ben_5
 gen ysal1ben_5=(2000*s04c_21a2)/12 if s04c_21a1==1
-note: a partir de 2018 por el DS N° 3546 se establece un subsidio equivalente a Bs2.000
 
 *6. Bono de natalidad
 capture drop ysal1ben_6

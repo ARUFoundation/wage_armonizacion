@@ -146,7 +146,6 @@ replace ysal1ben_4=s04c_19ba*freq
 *5. Subsidio de lactancia mensualizado
 capture drop ysal1ben_5
 gen ysal1ben_5=(2000*s04c_20a2)/12 if s04c_20a1==1	
-note: a partir de 2018 por el DS N° 3546 se establece un subsidio equivalente a Bs2.000
 
 *Salario mínimo 2021
 gen salmin=2164 
@@ -411,7 +410,6 @@ replace spbja_bmonto = 0 if spbja_bmonto ==. & spbja_b == 0
 *Subsidio (300)
 capture drop spprenat_q
 gen sppren_q = s02b_26a*300
-note: el subsidio universal prenatal se entrega por 4 meses en productos equivalentes a 300 bs.
 
 *BONO JUANCITO PINTO
 

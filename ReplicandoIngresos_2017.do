@@ -102,7 +102,7 @@ replace spbja_bmonto = 0 if spbja_bmonto ==. & spbja_b == 1
 *Subsidio Prenatal
 capture drop spprenat_q
 gen sppren_q = s04b_21b*300
-note: el subsidio universal prenatal se entrega por 4 meses en productos equivalentes a 300 bs.
+
 *BONO JUANCITO PINTO
 
 capture drop spbjp
